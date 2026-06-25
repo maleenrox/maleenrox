@@ -22,20 +22,20 @@ jobs:
           config_timezone: Asia/Colombo
           config_order: base.header, base.activity, base.community, base.repositories
 
-          # Custom CSS to force the Kali Linux / Cyberpunk aesthetic
+          # HTML-targeted CSS to override the Ubuntu theme with a Cyberpunk/Kali aesthetic
           config_custom_css: |
             /* Set the main terminal background to deep black */
-            rect { fill: #050505 !important; } 
+            .terminal { background-color: #050505 !important; border: 1px solid #00e5ff !important; }
             
-            /* Set the top header bar to a slightly lighter grey/black */
-            rect[height="26"] { fill: #111111 !important; } 
+            /* Set the top header bar to a flat dark grey */
+            .terminal-header { background-color: #111111 !important; border-bottom: 1px solid #00e5ff !important; }
             
-            /* Make all standard text neon cyan with a slight glow */
-            text, tspan { 
-              fill: #00e5ff !important; 
+            /* Make all standard output text neon cyan with a slight glow */
+            .terminal-body, .terminal-body * { 
+              color: #00e5ff !important; 
               text-shadow: 0 0 3px rgba(0, 229, 255, 0.4) !important;
               font-family: 'JetBrains Mono', 'Courier New', monospace !important; 
             }
             
-            /* Highlight specific terminal outputs or commands in white for contrast */
-            .field, .value { fill: #ffffff !important; text-shadow: none !important; }
+            /* Keep the executed commands white for sharp contrast */
+            .token_1 { color: #ffffff !important; text-shadow: none !important; }
