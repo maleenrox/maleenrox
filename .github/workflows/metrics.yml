@@ -1,0 +1,30 @@
+name: Generate Terminal Metrics
+on:
+  # Updates automatically every 24 hours
+  schedule: [{cron: "0 0 * * *"}]
+  # Allows you to run the build manually from the Actions tab
+  workflow_dispatch:
+  # Updates whenever you push new code to the main branch
+  push: {branches: ["main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Generate metrics-overview.svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-overview.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Sets the visual style to the terminal output
+          template: terminal
+
+          # Core plugins to pull your stats
+          base: header, activity, community, repositories
+
+          # Configuration
+          config_timezone: Asia/Colombo
+          config_order: base.header, base.activity, base.community, base.repositories
