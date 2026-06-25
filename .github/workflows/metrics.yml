@@ -20,28 +20,27 @@ jobs:
           config_timezone: Asia/Colombo
           config_order: base.header, base.activity, base.community, base.repositories
 
-          # Force Cyberpunk Dark Mode & Cyan Aesthetics via SVG Fill Overrides
+          # Kali Linux Terminal Mode & Cyan Aesthetics via SVG Fill Overrides
           config_custom_css: |
-            /* 1. Override the default Ubuntu purple backgrounds to deep black */
+            /* 1. Override the default Ubuntu purple backgrounds to Kali Dark */
             [fill="#300a24"], [fill="#2c001e"] { 
-              fill: #050505 !important; 
+              fill: #0a0a0c !important; /* Deep dark almost-black background */
             }
             
-            /* 2. Override the terminal header bar to dark grey */
+            /* 2. Override the terminal header bar to Kali Dark Grey */
             [fill="#434343"], [fill="#3e3e3e"] { 
-              fill: #111111 !important; 
+              fill: #1a1b26 !important; /* Kali modern terminal title bar */
             }
             
-            /* 3. Convert default green/white/grey text elements to glowing cyan */
-            text, [fill="#4e9a06"], [fill="#8ae234"], [fill="#ffffff"], [fill="#d3d7cf"] {
-              fill: #00e5ff !important;
-              color: #00e5ff !important;
-              text-shadow: 0 0 3px rgba(0, 229, 255, 0.4) !important;
-              font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+            /* 3. Convert all default text elements to bright Cyan */
+            text, [fill="#4e9a06"], [fill="#8ae234"], [fill="#ffffff"], [fill="#d3d7cf"], [fill="#729fcf"] {
+              fill: #00ffff !important;
+              color: #00ffff !important;
+              text-shadow: 0 0 2px rgba(0, 255, 255, 0.4) !important;
+              font-family: 'Hack', 'Fira Code', 'Consolas', monospace !important;
             }
             
-            /* 4. Keep specific command text or blue variables white for sharp contrast */
-            [fill="#729fcf"] {
-              fill: #ffffff !important;
-              text-shadow: none !important;
+            /* 4. Create slight contrast for standard user/hostname prompts */
+            [fill="#8ae234"] {
+              fill: #00cccc !important; /* Slightly darker cyan for dimension/depth */
             }
