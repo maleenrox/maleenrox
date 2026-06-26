@@ -20,27 +20,33 @@ jobs:
           config_timezone: Asia/Colombo
           config_order: base.header, base.activity, base.community, base.repositories
 
-          # Kali Linux Terminal Mode & Cyan Aesthetics via SVG Fill Overrides
-          config_custom_css: |
-            /* 1. Override the default Ubuntu purple backgrounds to Kali Dark */
-            [fill="#300a24"], [fill="#2c001e"] { 
-              fill: #0a0a0c !important; /* Deep dark almost-black background */
+          # Modern HTML/CSS overrides for the terminal template
+          extras_css: |
+            /* 1. Kali Dark Background & Window Layout */
+            pre { 
+              background: #0a0a0c !important; 
+              color: #00e5ff !important; 
+              border: 1px solid #00e5ff !important; 
+              box-shadow: 0 0 10px rgba(0, 229, 255, 0.1) !important; 
+            }
+            .header { 
+              background: #1a1b26 !important; 
+              border-bottom: 1px solid #00cccc !important; 
             }
             
-            /* 2. Override the terminal header bar to Kali Dark Grey */
-            [fill="#434343"], [fill="#3e3e3e"] { 
-              fill: #1a1b26 !important; /* Kali modern terminal title bar */
+            /* 2. Cyan Font Formatting & Subtle Neon Glow */
+            .title, .ps1-path, .diff, text { 
+              color: #00e5ff !important; 
+              text-shadow: 0 0 2px rgba(0, 229, 255, 0.4) !important; 
+              font-family: 'Hack', 'Fira Code', 'Consolas', monospace !important; 
             }
             
-            /* 3. Convert all default text elements to bright Cyan */
-            text, [fill="#4e9a06"], [fill="#8ae234"], [fill="#ffffff"], [fill="#d3d7cf"], [fill="#729fcf"] {
-              fill: #00ffff !important;
-              color: #00ffff !important;
-              text-shadow: 0 0 2px rgba(0, 255, 255, 0.4) !important;
-              font-family: 'Hack', 'Fira Code', 'Consolas', monospace !important;
+            /* 3. Terminal Prompt Accent (Slightly darker cyan for dimension) */
+            .ps1-location, .banner, footer { 
+              color: #00cccc !important; 
             }
-            
-            /* 4. Create slight contrast for standard user/hostname prompts */
-            [fill="#8ae234"] {
-              fill: #00cccc !important; /* Slightly darker cyan for dimension/depth */
-            }
+
+            /* 4. Fallback for native SVG paths (stripping Ubuntu Purple entirely) */
+            [fill="#300a24"], [fill="#2c001e"] { fill: #0a0a0c !important; }
+            [fill="#434343"], [fill="#3e3e3e"] { fill: #1a1b26 !important; }
+            [fill="#8ae234"], [fill="#4e9a06"], [fill="#ffffff"] { fill: #00e5ff !important; }
