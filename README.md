@@ -34,7 +34,7 @@
 <h2 align="center"><font color="#00e5ff">🖥️ System.out.println("About Me");</font></h2>
 
 <div align="center">
-  <img src="./metrics-overview.svg" alt="Live Terminal Metrics" width="850" />
+  <img src="./metrics-overview.svg" alt="Live Terminal Metrics" width="500" />
 </div>
 
 <br/>
