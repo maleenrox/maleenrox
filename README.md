@@ -37,7 +37,6 @@
   <img src="./metrics-overview.svg" alt="Live Terminal Metrics" width="500" />
 </div>
 
-<br/>
 
 
 ---
@@ -47,12 +46,15 @@
 
 <div align="center">
   <p><b>Languages & Scripting</b></p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,js,ts,bash&perline=10" alt="Core Languages" />
+  <img src="https://skillicons.dev/icons?i=python,java,c,js,ts,bash,r&perline=10" alt="Core Languages" />
+  <br/><br/>
+
+  <p><b>Frontend & UI</b></p>
+  <img src="https://skillicons.dev/icons?i=html,css,angular&perline=10" alt="Frontend Development" />
   <br/><br/>
   
-  <p><b>Cybersecurity, Networking & Environments</b></p>
-  <!-- Using icons that represent Kali, Ubuntu, Networking, Postman, Wireshark -->
-  <img src="https://skillicons.dev/icons?i=linux,ubuntu,git,postman,github&perline=10" alt="Security & Environment" />
+  <p><b>Cybersecurity, DevOps & Environments</b></p>
+  <img src="https://skillicons.dev/icons?i=linux,ubuntu,kali,docker,git,postman,github&perline=10" alt="Security, DevOps & Environment" />
   <br/><br/>
   
   <p><b>Backend & Databases</b></p>
