@@ -62,7 +62,7 @@
 
 <br/><br/>
   
-  <p><b>Specialized Tech, Frameworks & Legacy</b></p>
+  <p><b>Specialized Other Tech, Frameworks & Legacy</b></p>
   <p>
     <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=databricks&logoColor=00e5ff&labelColor=000000&color=000000" alt="SQL" />
     <img src="https://img.shields.io/badge/tSQL-000000?style=for-the-badge&logo=microsoftsqlserver&logoColor=00e5ff&labelColor=000000&color=000000" alt="tSQL" />
@@ -71,7 +71,6 @@
     <img src="https://img.shields.io/badge/Pascal-000000?style=for-the-badge&logoColor=00e5ff&labelColor=000000&color=000000" alt="Pascal" />
     <img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=nasm&logoColor=00e5ff&labelColor=000000&color=000000" alt="Assembly" />
     <img src="https://img.shields.io/badge/Visual_Basic-000000?style=for-the-badge&logo=visualstudio&logoColor=00e5ff&labelColor=000000&color=000000" alt="Visual Basic" />
-    <img src="https://img.shields.io/badge/Black_Arch-000000?style=for-the-badge&logo=archlinux&logoColor=00e5ff&labelColor=000000&color=000000" alt="Black Arch" />
   </p>
 </div>
 
