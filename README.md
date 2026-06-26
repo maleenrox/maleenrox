@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://github.com/maleenrox">
     <!-- Using the exact image you provided. Just ensure image_769a19.png is uploaded to the root of your repository -->
-    <img src="./assets/images/rox-avatar.jpg" width="130" height="130" alt="Maleen Profile Picture" style="margin-top:-60px; border-radius: 50%; border: 4px solid #00e5ff; box-shadow: 0 0 15px #00e5ff;" />
+    <img src="./assets/images/msrox-logo.png" width="130" alt="MS Rox Logo" style="margin-top:-60px; border-radius: 50%; border: 4px solid #00e5ff; box-shadow: 0 0 15px #00e5ff;" />
   </a>
 </div>
 
@@ -60,7 +60,7 @@
   <p><b>Backend & Databases</b></p>
   <img src="https://skillicons.dev/icons?i=spring,hibernate,mysql&perline=10" alt="Backend" />
 
-<br/><br/>
+<br/>
   
   <p><b>Specialized Other Tech, Frameworks & Legacy</b></p>
   <p>
