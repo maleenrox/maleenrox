@@ -62,7 +62,7 @@ pre {
 
 <pre><div class="stdin"><span class="ps1-path">maleenrox@metrics</span>:<span class="ps1-location">~</span># whoami</div><div class="stdout"><b>Maleen Rox</b> registered=4y, uid=0420, gid=0
   contributed to 6 repositories <b><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span><span style="color:#ebedf0">#</span></b>
-  followed by <b>6</b> users
+  followed by <b>5</b> users
 </div>
 <div class="stdin"><span class="ps1-path">maleenrox@metrics</span>:<span class="ps1-location">~</span># ls -lh github/repositories</div><div class="stdout">Total 12 repositories - 48.7 MB
 -r--  <b>    6</b>  stargazers
